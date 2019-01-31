@@ -32,3 +32,5 @@ RUN rm -rf /tmp/*
 COPY entrypoint.bash /entrypoint.bash
 RUN chmod a+x /entrypoint.bash
 ENTRYPOINT ["/entrypoint.bash"]
+
+#CMD ["nginx", "-g", "'daemon off;'"]
